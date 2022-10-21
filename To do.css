@@ -7,15 +7,11 @@
     margin: 0;
 }
 
-html{
-    background-color: rgb(49, 47, 47);
-}
-
 .container{
     height: 70vh;
-    width: 60vw;
-    background-color: rgb(202, 201, 199);
-    border-radius: 15px;
+    width: 30rem;
+    background-color: rgba(230, 230, 230, 0.479);
+    border-radius: 10px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -24,7 +20,6 @@ html{
 
 .container > h1{ 
     font-size: 3em;
-    color: rgb(201, 109, 109);
     display: grid;
     justify-items: center;
     margin: 10px 0;
@@ -40,19 +35,27 @@ html{
     display: grid;
     grid-template-columns: 1fr 0.1fr;
     align-items: center;
-    margin: 0.6rem 1rem;
+    margin: 4%;
 }
 
 .add{
     border: none;
-    border-radius: 0 8px 8px 0; 
-    height: 100%;
+    border-radius: 10px;
+    min-width: 4rem; 
     display: flex;
+    background-color: rgb(61, 105, 226);
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding: 0.6rem;
+    padding: 8px;
+    color: white;
     outline: none;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.add:hover{
+    background-color: rgb(47, 89, 206);
 }
 
 .main{
@@ -63,12 +66,16 @@ html{
 }
 
 input{
-    height: 4vh;
-    padding: 0.6rem;
+    padding: 8px;
     border: 0;
-    border-radius: 8px 0 0 8px;
+    border-radius: 10px;
+    margin: 0 1rem 0 0;
+    box-shadow: 2px 2px 8px; 
 }
 
+.taskList h2{
+    margin: 0 4%;
+}
 
 input:focus{
     outline: none;
@@ -77,21 +84,19 @@ input:focus{
 .tick{
     background-color: var(--c);
     border: 1px solid var(--c);
-    height: 100%;
+    border-radius: 10px;
     display: flex;
+    min-width: 4rem;
+    padding: 8px;
+    color: white;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: 1s;
-
+    transition: 0.2s;
 }
 
-#tick{
-    transition: 1s;;
-}
-
-#tick:hover{
-    transform: scale(1.3);
+.tick:hover{
+    background-color: rgb(34, 131, 30);
 }
 
 
@@ -99,34 +104,21 @@ input:focus{
     transition: 1s;;
 }
 
-#close:hover{
-    transform: scale(1.3);
+.close:hover{
+    background-color: rgb(177, 17, 49);
 }
 
 .close{
-    background-color: rgba(255, 0, 0, 0.562);
-    border: 1px solid rgba(255, 0, 0, 0.562);
-    border-radius: 0 8px 8px 0; 
-    height: 100%;
+    background-color: crimson;
+    border: none;
+    border-radius: 10px; 
+    min-width: 4rem;
+    margin-left: 1rem;
+    padding: 8px;
     cursor: pointer;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
