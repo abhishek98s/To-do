@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    font-size: 16px;
  }
 
  body{
@@ -17,8 +18,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-    min-width: 25em;
-    max-width: 40em;
+    min-width: 24em;
+    max-width: 38em;
+    height: 30em;
     border-radius: 15px;
     box-shadow: rgba(149, 157, 165, 0.5) 0px 10px 24px;
     
@@ -80,13 +82,13 @@
 
 .taskList{
     margin: 1em;
-    height: 20rem;
+    height: 16em;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
 .taskLists h2{
-    margin: 1em 0 0.5em 0;
+    margin: 1em 0 0 0 0;
     text-align: start;
     font-size: 1.5rem;
 }
@@ -94,7 +96,7 @@
 .taskLists .main{
     display: flex;
     justify-content: space-evenly;
-    margin: 1em 0 1em 0;
+    margin: 0.5em 0 1em 0;
 }
 
 .taskLists .main input{
@@ -178,9 +180,9 @@
   }
 
 
-/* @media only screen and (min-width: 500px){
+@media only screen and (min-width: 500px){
     *{
-        font-size: 20px;
-    } */
+        font-size: 18px;
+    }
 }
 
